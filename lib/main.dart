@@ -114,19 +114,59 @@ class MyHomePage extends StatelessWidget {
       body:   SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Text('"There is a hope of life to someone in your blood donation.”',
-                  style: TextStyle(color:
-                  Colors.deepOrange,
-                  fontSize: 14.0,
-                  //fontStyle: FontStyle.italic,
-                    fontFamily: 'Satisfy-Regular',
+            SizedBox(height: 20.0,),
+            Container(
+              alignment: Alignment.topLeft,
+                  height: 110,
+                  width: 120,
+                  padding: EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.teal,
                   ),
-                )
+                  borderRadius: BorderRadius.circular(10.0),
+                  ),
+              child:Text('"Blood donation is a great Act of Kindness.”',
+                          style: TextStyle(color:
+                          Colors.deepOrange,
+                            fontSize: 18.0,
+                            fontFamily: 'Satisfy',
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                ),
+            SizedBox(height: 20.0,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FlatButton(onPressed: (){},
+                  child: const Padding(
+                    padding: EdgeInsets.all(12.0),
+                      child: Text('Donar',
+                      style: TextStyle(
+                        letterSpacing: 2.0,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
+                         backgroundColor: Colors.teal,
+                        color: Colors.white,
+                      ),
+                        textAlign: TextAlign.center,
+                    ),
+                ),
+                ),
+                FlatButton(onPressed: (){},
+                  child: Text('Receiver',
+                    style: TextStyle(
+                      letterSpacing: 2.0,
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      backgroundColor: Colors.teal,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ],
             ),
-            Row(),
             Row(),
             Row(),
           ],

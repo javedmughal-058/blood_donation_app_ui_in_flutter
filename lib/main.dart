@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'Screens/selection_screen.dart';
-void main() => runApp(const screen1());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -24,16 +24,17 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body:   SafeArea(
         child: Column(
           children: [
             Expanded(
-                flex: 6,
+                flex: 3,
                 child: Container(
                   width: double.infinity,
                   decoration: const BoxDecoration(
                     color: Colors.redAccent,
-                    borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),bottomLeft: Radius.circular(50)),
+                    borderRadius: BorderRadius.only(bottomRight: Radius.circular(70)),
                   ),
                   child: Container(
                       decoration: const BoxDecoration(
@@ -48,11 +49,14 @@ class MyHomePage extends StatelessWidget {
                   ),
             ),
             Expanded(
-              flex: 4,
+              flex: 2,
               child: Container(
                 //width: double.infinity,
+                color: Colors.redAccent,
+                child: Container(
                 decoration: const BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(70)),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
@@ -98,7 +102,7 @@ class MyHomePage extends StatelessWidget {
                ),
               ),
             ),
-
+            ),
           ],
         ),
       ),

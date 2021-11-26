@@ -25,6 +25,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.redAccent,
       appBar: AppBar(title: Text(title),backgroundColor: Colors.redAccent,),
       drawer: Drawer(
         child: ListView(
@@ -118,7 +119,6 @@ class MyHomePage extends StatelessWidget {
             child: Container(
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),bottomRight: Radius.circular(40), ),
                   color: Colors.redAccent,
                 ),
             ),
@@ -129,6 +129,7 @@ class MyHomePage extends StatelessWidget {
             child: Container(
                // width: double.infinity,
                 decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(50),topRight: Radius.circular(50), ),
                   color: Colors.white,
 
                 ),

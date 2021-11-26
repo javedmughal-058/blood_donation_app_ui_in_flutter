@@ -114,61 +114,65 @@ class MyHomePage extends StatelessWidget {
       body:   SafeArea(
         child: Column(
           children: [
-            SizedBox(height: 20.0,),
-            Container(
-              alignment: Alignment.topLeft,
-                  height: 110,
-                  width: 120,
-                  padding: EdgeInsets.all(6),
+            //
+            Expanded(
+                flex: 3,
+                child: Container(
+                  width: double.infinity,
                   decoration: BoxDecoration(
-                  border: Border.all(
                     color: Colors.teal,
+                    borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),),
                   ),
-                  borderRadius: BorderRadius.circular(10.0),
+                  child: Column(
+                    children: [
+                    Image.asset("images/launch.png"),
+                    ],
                   ),
-              child:Text('"Blood donation is a great Act of Kindness.”',
-                          style: TextStyle(color:
-                          Colors.deepOrange,
-                            fontSize: 18.0,
-                            fontFamily: 'Satisfy',
-                            fontStyle: FontStyle.italic,
-                          ),
-                        ),
-                ),
-            SizedBox(height: 20.0,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                FlatButton(onPressed: (){},
-                  child: const Padding(
-                    padding: EdgeInsets.all(12.0),
-                      child: Text('Donar',
-                      style: TextStyle(
-                        letterSpacing: 2.0,
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
-                         backgroundColor: Colors.teal,
-                        color: Colors.white,
-                      ),
-                        textAlign: TextAlign.center,
-                    ),
-                ),
-                ),
-                FlatButton(onPressed: (){},
-                  child: Text('Receiver',
-                    style: TextStyle(
-                      letterSpacing: 2.0,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
-                      backgroundColor: Colors.teal,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
             ),
-            Row(),
-            Row(),
+            ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(50),),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(15.0),
+                child: Column(
+                  children: [
+                   Text('Blood Donation',
+                     style: TextStyle(
+                       fontSize: 28,
+                       fontWeight: FontWeight.bold,
+                     ),
+                   ),
+                    SizedBox(height: 10,),
+                    Text('is a great act\nus,of kindness.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black54,
+                        height: 1.5,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                    ),
+                    ),
+                    SizedBox(height: 10,),
+                    Row(children: [
+                      TextButton.icon(onPressed: (){}, icon: Icon(Icons.fast_forward_outlined), label: Text('Let Started',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),),),
+                    ],)
+                  ],
+                ),
+               ),
+              ),
+            ),
+
           ],
         ),
       ),

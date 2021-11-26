@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-void main() => runApp(const MyApp());
+import 'Screens/selection_screen.dart';
+void main() => runApp(const screen1());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const appTitle = 'Blood Donation App';
+  static const appTitle = 'Pak Blood Donation';
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: appTitle,
       home: MyHomePage(title: appTitle),
     );
@@ -19,137 +20,52 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
   final String title;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title),backgroundColor: Colors.teal,),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-             const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.teal,
-              ),
-              child: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Text('Applicant Profile',
-                  style: TextStyle(
-                      color: Colors.teal
-                  ),
-                ),
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Home',
-                style: TextStyle(
-                  color: Colors.black45,
-                  fontSize: 14.0,
-                ),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.account_circle_rounded),
-              title: const Text('Account',
-                style: TextStyle(
-                  color: Colors.black45,
-                  fontSize: 14.0,
-                ),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.settings_applications_rounded ),
-              title: const Text('Setting',
-                style: TextStyle(
-                  color: Colors.black45,
-                  fontSize: 14.0,
-                ),),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.article_rounded),
-              title: const Text('About us',
-                style: TextStyle(
-                  color: Colors.black45,
-                  fontSize: 14.0,
-                ),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.info),
-              title: const Text('App info',
-                style: TextStyle(
-                  color: Colors.black45,
-                  fontSize: 16.0,
-                ),),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-
-          ],
-        ),
-      ),
       body:   SafeArea(
         child: Column(
           children: [
-            //
             Expanded(
-                flex: 3,
+                flex: 6,
                 child: Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.teal,
-                    borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),),
+                  decoration: const BoxDecoration(
+                    color: Colors.redAccent,
+                    borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),bottomLeft: Radius.circular(50)),
                   ),
-                  child: Column(
-                    children: [
-                    Image.asset("images/launch.png"),
-                    ],
+                  child: Container(
+                      decoration: const BoxDecoration(
+                          //color: Colors.black,
+                          image: DecorationImage(
+                              image:AssetImage('assets/images/launch.png'),
+                              //fit:BoxFit.cover
+                          ),
+                        // button text
+                      )
+                  )
                   ),
-            ),
             ),
             Expanded(
-              flex: 2,
+              flex: 4,
               child: Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
+                //width: double.infinity,
+                decoration: const BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(50),),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: const EdgeInsets.all(15.0),
                 child: Column(
                   children: [
-                   Text('Blood Donation',
+                   const Spacer(),
+                    const Text('Blood Donation',
                      style: TextStyle(
-                       fontSize: 28,
+                       fontSize: 24,
                        fontWeight: FontWeight.bold,
                      ),
                    ),
-                    SizedBox(height: 10,),
-                    Text('is a great act\nus,of kindness.',
+                    const Text('is a great act\nof kindness.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black54,
@@ -158,11 +74,21 @@ class MyHomePage extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                     ),
                     ),
-                    SizedBox(height: 10,),
-                    Row(children: [
-                      TextButton.icon(onPressed: (){}, icon: Icon(Icons.fast_forward_outlined), label: Text('Let Started',
-                      style: TextStyle(
-                        fontSize: 20,
+                    const Spacer(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                      MaterialButton(
+                        height: 50,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
+                        color: Colors.redAccent,
+                        onPressed: (){
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const screen1()),
+                        );},
+                      child: const Text('Let Started',style: TextStyle(
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),),),

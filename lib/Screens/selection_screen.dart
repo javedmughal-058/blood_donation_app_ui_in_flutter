@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'signup.dart';
+import 'login.dart';
 import 'receiver_screen.dart';
 
 class screen1 extends StatelessWidget {
@@ -147,13 +147,13 @@ class MyHomePage extends StatelessWidget {
                                           onTap: () {
                                             Navigator.push(
                                               context,
-                                              MaterialPageRoute(builder: (context) => signup_page()),
+                                              MaterialPageRoute(builder: (context) => LoginPage()),
                                             );
                                           },
                                           child: const SizedBox(width: 80, height: 80,
                                             child: Image(image:
                                             AssetImage(
-                                                'assets/images/b-d-logo.png'
+                                                'assets/images/b-d-logo.png',
                                             ),
                                             ),
                                           ),

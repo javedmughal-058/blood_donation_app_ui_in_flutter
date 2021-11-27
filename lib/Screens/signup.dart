@@ -80,7 +80,6 @@ class _EditProfilePageState extends State<signup> {
               SizedBox(
                 height: 15,
               ),
-
               RaisedButton(
                   onPressed: () {},
                   color: Colors.redAccent,
@@ -95,10 +94,12 @@ class _EditProfilePageState extends State<signup> {
                           letterSpacing: 2.2,
                           color: Colors.white))
               ),
+
             ],
-          ),
+
         ),
       ),
+    ),
     );
   }
 

@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                   child: Container(
                       decoration: const BoxDecoration(
-                          //color: Colors.black,
+                          color: Colors.transparent,
                           image: DecorationImage(
                               image:AssetImage('assets/images/launch.png'),
                               //fit:BoxFit.cover

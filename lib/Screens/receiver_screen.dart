@@ -104,38 +104,206 @@ class receiver_screen extends StatelessWidget {
               //borderRadius: BorderRadius.all(Radius.circular(50)),
             ),
             child: Container(
-              child: ListView(
+              child: Column(
                 children: [
-
-                  new Container (
-                    
-                      decoration: new BoxDecoration (
-                          color: Colors.red,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: new ListTile (
-                          title: Text('A-',style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),),
-                          onTap: (){
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => const donorsList()));
-                          },
-                      )
+                  Expanded(
+                    flex: 1,
+                    child:
+                  Container(
+                    child: Text('Which blood group Do you neend?',textAlign: TextAlign.center,style: TextStyle(
+                    color: Colors.black54,
+                    fontWeight: FontWeight.bold,
+                  ),),),
                   ),
+                  Expanded(
+                    flex: 9,
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: ListView(
+                        children: [
+                          SizedBox(height: 5,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('A-',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('A+',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('B-',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('B+',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('AB-',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('AB+',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('O-',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 10,),
+                          Container (
+                            decoration: new BoxDecoration (
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListTile (
+                              title: Text('O+',style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                                textAlign: TextAlign. center,
+                              ),
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const donorsList()));
+                              },
+                            ),
+                          ),
 
-
-                      ],
-                    ),
-
+                        ],
+                      ),
+                    ),)
+                ],
+              ),
 
               padding: EdgeInsets.all(50.0),
               decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
+            ),
         ),
-        ),
+
         ),
 
     );

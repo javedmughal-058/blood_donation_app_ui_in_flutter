@@ -11,7 +11,7 @@ class receiver_screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.redAccent,
-        appBar: AppBar(title: Text('Pak Blood Donation'),backgroundColor: Colors.redAccent,),
+        appBar: AppBar(title: const Text('Pak Blood Donation'),backgroundColor: Colors.redAccent,),
         drawer: Drawer(
           child: ListView(
             padding: EdgeInsets.zero,
@@ -51,7 +51,7 @@ class receiver_screen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginPage()),
+                    MaterialPageRoute(builder: (context) => const LoginPage()),
                   );
                 },
               ),
@@ -102,8 +102,8 @@ class receiver_screen extends StatelessWidget {
         body: SafeArea(child:
         Container(
 
-            padding: EdgeInsets.all(30.0),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.all(30.0),
+            decoration: const BoxDecoration(
               color: Colors.redAccent,
               //borderRadius: BorderRadius.all(Radius.circular(50)),
             ),
@@ -113,39 +113,38 @@ class receiver_screen extends StatelessWidget {
                   IconButton(onPressed: (){
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => screen1(),
+                      MaterialPageRoute(builder: (context) => const screen1(),
                       ),
                     );
-                  }, icon: Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
-                  Expanded(
+                  }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
+                  const Expanded(
                     flex: 1,
                     child:
-                      Container(
-                             child: Text(
-                               'Which blood group Do you need?',
-                               textAlign: TextAlign.center,
-                               style: TextStyle(
+                      Text(
+                        'Which blood group Do you need?',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
                     color: Colors.black54,
                     fontWeight: FontWeight.bold,
-                  ),),),
+                  ),),
                   ),
                   Expanded(
                     flex: 9,
                     child: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20),
                       ),
                       child: ListView(
                         children: [
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('A-',style: TextStyle(
+                              title: const Text('A-',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -159,14 +158,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('A+',style: TextStyle(
+                              title: const Text('A+',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -180,14 +179,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('B-',style: TextStyle(
+                              title: const Text('B-',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -201,14 +200,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('B+',style: TextStyle(
+                              title: const Text('B+',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -222,14 +221,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('AB-',style: TextStyle(
+                              title: const Text('AB-',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -243,14 +242,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('AB+',style: TextStyle(
+                              title: const Text('AB+',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -264,14 +263,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('O-',style: TextStyle(
+                              title: const Text('O-',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -285,14 +284,14 @@ class receiver_screen extends StatelessWidget {
                               },
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Container (
-                            decoration: new BoxDecoration (
+                            decoration: BoxDecoration (
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ListTile (
-                              title: Text('O+',style: TextStyle(
+                              title: const Text('O+',style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -313,8 +312,8 @@ class receiver_screen extends StatelessWidget {
                 ],
               ),
 
-              padding: EdgeInsets.all(50.0),
-              decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
+              padding: const EdgeInsets.all(50.0),
+              decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
             ),
         ),
 

@@ -34,7 +34,10 @@ class receiver_screen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const screen1()),
+                  );
                 },
               ),
               ListTile(
@@ -119,7 +122,7 @@ class receiver_screen extends StatelessWidget {
                     child:
                       Container(
                              child: Text(
-                               'Which blood group Do you neend?',
+                               'Which blood group Do you need?',
                                textAlign: TextAlign.center,
                                style: TextStyle(
                     color: Colors.black54,

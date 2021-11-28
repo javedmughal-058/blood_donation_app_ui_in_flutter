@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'Login-page';
+
+  const LoginPage({Key? key}) : super(key: key);
   @override
-  _LoginPageState createState() => new _LoginPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
@@ -25,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
     //  initialValue: 'abc@gmail.com',
       decoration: InputDecoration(
         hintText: 'Email',
-        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        contentPadding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0),
         ))
     );
@@ -34,13 +36,13 @@ class _LoginPageState extends State<LoginPage> {
       obscureText: true,
       decoration: InputDecoration(
         hintText: 'Password',
-        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        contentPadding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0),
         )
       ),
     );
     final loginButton = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
@@ -48,13 +50,13 @@ class _LoginPageState extends State<LoginPage> {
         onPressed: () {
 
         },
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         color: Colors.red,
-        child: Text('Log In', style: TextStyle(color: Colors.white,height: 2)),
+        child: const Text('Log In', style: TextStyle(color: Colors.white,height: 2)),
       ),
     );
     final forgotLabel = FlatButton(
-      child: Text(
+      child: const Text(
         'Forgot password?',
         style: TextStyle(color: Colors.black54),
       ),
@@ -67,11 +69,11 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Container(
         //margin: EdgeInsets.symmetric(vertical: 20),
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         alignment: Alignment.bottomCenter,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          children: const <Widget>[
             Text(
               'Don\'t have an account ?',
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
@@ -93,15 +95,15 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.red,
       body: Container(
-        padding: EdgeInsets.all(50.0),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.all(50.0),
+        decoration: const BoxDecoration(
           color: Colors.red,
           //borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
         child: Container(
 
-          padding: EdgeInsets.all(50.0),
-          decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
+          padding: const EdgeInsets.all(50.0),
+          decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
           child: ListView(
 
             shrinkWrap: true,
@@ -110,16 +112,16 @@ class _LoginPageState extends State<LoginPage> {
               IconButton(onPressed: (){
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => screen1(),
+                    MaterialPageRoute(builder: (context) => const screen1(),
                     ),
                 );
-              }, icon: Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
+              }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
               logo,
-              SizedBox(height: 12.0),
+              const SizedBox(height: 12.0),
               email,
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               password,
-              SizedBox(height: 10.0),
+              const SizedBox(height: 10.0),
               loginButton,
               forgotLabel,
               registerLabel

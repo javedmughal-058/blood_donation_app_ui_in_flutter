@@ -34,10 +34,10 @@ class MyHomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.red,
                       border: Border.all(width: 0, color: Colors.red),
-                      borderRadius: BorderRadius.only(bottomRight: Radius.circular(70),
+                      borderRadius: const BorderRadius.only(bottomRight: Radius.circular(70),
                       ),
                     ),
-                    child: Image(image: AssetImage("images/launch.png"),height: 50,width: 50,))
+                    child: const Image(image: AssetImage("images/launch.png"),height: 50,width: 50,))
             ),
             Expanded(
               flex: 2,
@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(width: 0, color: Colors.white),
                     color: Colors.white,
-                    borderRadius: BorderRadius.only(topLeft: Radius.circular(70)),
+                    borderRadius: const BorderRadius.only(topLeft: Radius.circular(70)),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
@@ -77,13 +77,13 @@ class MyHomePage extends StatelessWidget {
                             MaterialButton(
                               height: 50,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(70.0)),
-                              color: Colors.redAccent,
+                              color: Colors.red,
                               onPressed: (){
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(builder: (context) => const screen1()),
                                 );},
-                              child: Icon(Icons.arrow_forward, color: Colors.white,),),
+                              child: const Icon(Icons.arrow_forward, color: Colors.white,),),
                           ],)
                       ],
                     ),

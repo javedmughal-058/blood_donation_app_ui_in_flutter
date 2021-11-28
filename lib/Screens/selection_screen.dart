@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'donor_screen.dart';
 import 'login.dart';
 import 'receiver_screen.dart';
 
@@ -36,12 +37,8 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.redAccent,
               ),
               child: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Text('Applicant Profile',
-                  style: TextStyle(
-                      color: Colors.redAccent
-                  ),
-                ),
+                  backgroundColor: Colors.white,
+                  child: Image(image: AssetImage("images/launch.png"),)
               ),
             ),
             ListTile(
@@ -58,14 +55,17 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.account_circle_rounded),
-              title: const Text('Account',
+              title: const Text('Admin',
                 style: TextStyle(
                   color: Colors.black45,
                   fontSize: 14.0,
                 ),
               ),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
               },
             ),
             ListTile(
@@ -117,86 +117,86 @@ class MyHomePage extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Container(
-                width: double.infinity,
-                decoration: const BoxDecoration(
-                  color: Colors.redAccent,
-                ),
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                color: Colors.redAccent,
+              ),
             ),
 
-                ),
+          ),
           Expanded(
             flex: 4,
             child: Container(
-               // width: double.infinity,
+              // width: double.infinity,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(50),topRight: Radius.circular(50), ),
                   color: Colors.white,
 
                 ),
                 child: Column(
-                    children: [
-                                 const SizedBox(height: 50,),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                        ClipOval(
-                                        child: Material(
-                                        color: Colors.redAccent, // Button color
-                                        child: InkWell(
-                                          splashColor: Colors.teal, // Splash color
-                                          onTap: () {
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(builder: (context) => LoginPage()),
-                                            );
-                                          },
-                                          child: const SizedBox(width: 80, height: 80,
-                                            child: Image(image:
-                                            AssetImage(
-                                                'assets/images/b-d-logo.png',
-                                            ),
-                                            ),
-                                          ),
-                                                        ),
-                                                      ),
-                                            ),
-                                        const SizedBox(width: 40,),
-                                        ClipOval(
-                                          child: Material(
-                                            color: Colors.blue, // Button color
-                                            child: InkWell(
-                                              splashColor: Colors.red, // Splash color
-                                              onTap: () {
-                                                Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(builder: (context) => const receiver_screen()),
-                                                );
-                                              },
-                                              child:  SizedBox(width: 80, height: 80,
-                                                child:  Image.asset('assets/images/reciever.png'),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                               ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      const Text('Donor',style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.redAccent,
-                                      ),),
-                                      const SizedBox(width: 70,),
-                                      const Text('Receiver',style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.redAccent,
-                                      ),),
-                                    ],
-                                  ),
-                              ],
+                  children: [
+                    const SizedBox(height: 50,),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ClipOval(
+                          child: Material(
+                            color: Colors.blue,
+                            shadowColor: Colors.grey,// Button color
+                            child: InkWell(
+                              splashColor: Colors.red, // Splash color
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Doner()),
+                                );
+                              },
+                              child:  SizedBox(width: 80, height: 80,
+                                child: Image.asset('images/b-d-logo.png'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 10,),
+                        const Text('Donor',style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.redAccent,
+                        ),),
+                        const SizedBox(height: 60,),
+                        ClipOval(
+                          child: Material(
+                            color: Colors.blue,
+                            shadowColor: Colors.grey,// Button color
+                            child: InkWell(
+                              splashColor: Colors.red, // Splash color
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const receiver_screen()),
+                                );
+                              },
+                              child:  SizedBox(width: 80, height: 80,
+                                child:  Image.asset('images/reciever.png'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 10,),
+                        const Text('Receiver',style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.redAccent,
+                        ),),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const SizedBox(width: 70,),
+                      ],
+                    ),
+                  ],
                 )
             ),
 

@@ -139,6 +139,7 @@ class MyHomePage extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        Image(image: AssetImage("images/blood-donation.png"),height: 150,width: 150,),
                         ClipOval(
                           child: Material(
                             color: Colors.blue,
@@ -163,7 +164,7 @@ class MyHomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.redAccent,
                         ),),
-                        const SizedBox(height: 60,),
+                        const SizedBox(height: 20,),
                         ClipOval(
                           child: Material(
                             color: Colors.blue,
@@ -188,6 +189,7 @@ class MyHomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.redAccent,
                         ),),
+                        Image(image: AssetImage('images/blood-donation.png'),height: 150,width: 150,),
                       ],
                     ),
                     Row(

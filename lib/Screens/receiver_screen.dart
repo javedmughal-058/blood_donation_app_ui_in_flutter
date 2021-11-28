@@ -98,6 +98,7 @@ class receiver_screen extends StatelessWidget {
         ),
         body: SafeArea(child:
         Container(
+
             padding: EdgeInsets.all(30.0),
             decoration: BoxDecoration(
               color: Colors.redAccent,
@@ -106,11 +107,21 @@ class receiver_screen extends StatelessWidget {
             child: Container(
               child: Column(
                 children: [
+                  IconButton(onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => screen1(),
+                      ),
+                    );
+                  }, icon: Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
                   Expanded(
                     flex: 1,
                     child:
-                  Container(
-                    child: Text('Which blood group Do you neend?',textAlign: TextAlign.center,style: TextStyle(
+                      Container(
+                             child: Text(
+                               'Which blood group Do you neend?',
+                               textAlign: TextAlign.center,
+                               style: TextStyle(
                     color: Colors.black54,
                     fontWeight: FontWeight.bold,
                   ),),),

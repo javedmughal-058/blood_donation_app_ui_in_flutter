@@ -1,4 +1,5 @@
 
+import 'package:blood_bank/Screens/selection_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:alert/alert.dart';
 
@@ -128,16 +129,23 @@ class _DonerPageState extends State<Doner> {
             shrinkWrap: true,
             //padding: EdgeInsets.only(left: 24.0, right: 24.0),
             children: <Widget>[
+              IconButton(onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => screen1(),
+                  ),
+                );
+              }, icon: Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
               logo,
-              SizedBox(height: 10.0),
+              SizedBox(height: 5.0),
               name,
-              SizedBox(height: 8.0),
+              SizedBox(height: 5.0),
               address,
-              SizedBox(height: 8.0),
+              SizedBox(height: 5.0),
               contact,
-              SizedBox(height: 8.0),
+              SizedBox(height: 5.0),
               group,
-              SizedBox(height: 8.0),
+              SizedBox(height: 5.0),
               SigupButton,
             ],
           ),

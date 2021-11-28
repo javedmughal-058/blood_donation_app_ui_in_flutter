@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'List_of_Donor.dart';
 import 'selection_screen.dart';
 import 'login.dart';
 
@@ -103,100 +104,40 @@ class receiver_screen extends StatelessWidget {
               //borderRadius: BorderRadius.all(Radius.circular(50)),
             ),
             child: Container(
-              child: Column(
+              child: ListView(
                 children: [
-                  Expanded(
-                    child: Row(
-                      children: [
-                        MaterialButton(
-                          height: 110,
-                          minWidth: 100,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Colors.redAccent,
-                          onPressed: (){},
-                          child: Text(
-                            'A+',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        SizedBox(width: 20,),
-                        MaterialButton(
-                          height: 110,
-                          minWidth: 100,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Colors.redAccent,
-                          onPressed: (){},
-                          child: Text(
-                            'A+',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-                          ),
-                        ),
+
+                  new Container (
+                    
+                      decoration: new BoxDecoration (
+                          color: Colors.red,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: new ListTile (
+                          title: Text('A-',style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          onTap: (){
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const donorsList()));
+                          },
+                      )
+                  ),
+
+
                       ],
                     ),
-                  ),
-                  SizedBox(height: 20),
-                  Expanded(
-                    child: Row(
-                      children: [
-                        MaterialButton(
-                          height: 110,
-                          minWidth: 100,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Colors.redAccent,
-                          onPressed: (){},
-                          child: Text(
-                            'A+',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        SizedBox(width: 20,),
-                        MaterialButton(
-                          height: 110,
-                          minWidth: 100,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Colors.redAccent,
-                          onPressed: (){},
-                          child: Text(
-                            'A+',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Expanded(
-                    child: Row(
-                      children: [
-                        MaterialButton(
-                          height: 110,
-                          minWidth: 100,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Colors.redAccent,
-                          onPressed: (){},
-                          child: Text(
-                            'A+',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        SizedBox(width: 20,),
-                        MaterialButton(
-                          height: 110,
-                          minWidth: 100,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Colors.redAccent,
-                          onPressed: (){},
-                          child: Text(
-                            'A+',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+
 
               padding: EdgeInsets.all(50.0),
               decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
+        ),
+        ),
+        ),
 
-            )
-        )
-        )
     );
   }
 }

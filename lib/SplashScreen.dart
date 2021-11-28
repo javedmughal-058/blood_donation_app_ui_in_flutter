@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'Screens/receiver_screen.dart';
 import 'main.dart';
 
 void main() {
@@ -53,11 +54,11 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   Future<Timer> loadData() async {
-    return Timer(const Duration(seconds: 3), onDoneLoading);
+    return Timer(const Duration(seconds: 0), onDoneLoading);
   }
 
   onDoneLoading() async {
     Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const MyApp()));
+        MaterialPageRoute(builder: (context) => const receiver_screen()));
   }
 }

@@ -8,7 +8,7 @@ class donorsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Pak Blood Donation'),backgroundColor: Colors.redAccent,),
+      appBar: AppBar(title: const Text('Pak Blood Donation'),backgroundColor: Colors.redAccent,),
     );
   }
 }

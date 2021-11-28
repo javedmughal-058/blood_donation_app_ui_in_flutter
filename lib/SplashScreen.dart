@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Screens/receiver_screen.dart';
 import 'main.dart';
 
 void main() {
@@ -35,21 +34,19 @@ class SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child:  Center(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children:[
-              Image(image: AssetImage("images/logo.png"),height: 150,width: 150,),
-              SizedBox(height: 20,),
-              Text('Pak Blood Donation',style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),)
-            ]
-        ),
+    return Center(
+      child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children:const [
+            Image(image: AssetImage("images/logo.png"),height: 150,width: 150,),
+            SizedBox(height: 20,),
+            Text('Pak Blood Donation',style: TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),)
+          ]
       ),
     );
   }

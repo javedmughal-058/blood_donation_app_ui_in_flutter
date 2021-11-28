@@ -7,7 +7,7 @@ void main() {
   return runApp(
     const MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.redAccent,
         body: SplashScreen(),
       ),
     ),
@@ -34,14 +34,26 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(image: AssetImage("images/launch.png")),
+      child:  Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children:[
+              Image(image: AssetImage("images/logo.png"),height: 150,width: 150,),
+              SizedBox(height: 20,),
+              Text('Pak Blood Donation',style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),)
+            ]
+        ),
       ),
     );
   }
 
   Future<Timer> loadData() async {
-    return Timer(const Duration(seconds: 1), onDoneLoading);
+    return Timer(const Duration(seconds: 3), onDoneLoading);
   }
 
   onDoneLoading() async {

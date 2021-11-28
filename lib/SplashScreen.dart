@@ -7,6 +7,7 @@ import 'main.dart';
 void main() {
   return runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.redAccent,
         body: SplashScreen(),

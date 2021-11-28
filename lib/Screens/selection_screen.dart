@@ -1,3 +1,4 @@
+import 'package:alert/alert.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'donor_screen.dart';
@@ -50,7 +51,10 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const screen1()),
+                );
               },
             ),
             ListTile(
@@ -91,7 +95,14 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                Navigator.pop(context);
+                const AlertDialog(title: Text('Pak Blood Donation\n V0.1.1'),
+                  titleTextStyle: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                      fontFamily: 'Satisfy',
+                  ),
+                );
+
               },
             ),
             ListTile(
@@ -102,10 +113,7 @@ class MyHomePage extends StatelessWidget {
                   fontSize: 16.0,
                 ),),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
+               Alert(message: 'This is alert message');
               },
             ),
 
@@ -136,10 +144,10 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     const SizedBox(height: 50,),
-                    Column(
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image(image: AssetImage("images/blood-donation.png"),height: 150,width: 150,),
+                       // Image(image: AssetImage("images/blood-donation.png"),height: 150,width: 150,),
                         ClipOval(
                           child: Material(
                             color: Colors.blue,
@@ -149,7 +157,7 @@ class MyHomePage extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => Doner()),
+                                  MaterialPageRoute(builder: (context) => const Doner()),
                                 );
                               },
                               child:  SizedBox(width: 80, height: 80,
@@ -158,13 +166,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text('Donor',style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.redAccent,
-                        ),),
-                        const SizedBox(height: 20,),
+                        const SizedBox(width: 20,),
                         ClipOval(
                           child: Material(
                             color: Colors.blue,
@@ -183,19 +185,40 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text('Receiver',style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.redAccent,
-                        ),),
-                        Image(image: AssetImage('images/blood-donation.png'),height: 150,width: 150,),
+
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(width: 70,),
+                      children: const [
+                        Text('Donor',style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.redAccent,
+                        ),),
+                        SizedBox(width: 40,),
+                        Text('Receiver',style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.redAccent,
+                        ),),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Image(image: AssetImage('images/blood-donation.png'),height: 250,width: 250,),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text('"Blood can circulate forever\nif you keep donating it"',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.red,
+                            fontFamily: 'Satisfy',
+                          ),),
                       ],
                     ),
                   ],

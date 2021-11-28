@@ -13,6 +13,7 @@ class SignUp extends StatefulWidget {
 class _LoginPageState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
+
     final logo = Hero(
       tag: 'hero',
       child: CircleAvatar(
@@ -21,7 +22,6 @@ class _LoginPageState extends State<SignUp> {
         child: Image.asset('images/b-d-logo.png'),
       ),
     );
-
     final name = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,

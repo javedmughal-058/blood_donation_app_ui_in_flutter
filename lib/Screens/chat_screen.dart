@@ -6,7 +6,7 @@ class ChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Donor-Name'),backgroundColor: Colors.red,),
+      appBar: AppBar(title: const Text('Donor-Name'),backgroundColor: Colors.red,),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
             ),
             SizedBox(
-              width: 10,
+              width: 3,
             ),
             Text(
               'Register',
@@ -115,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                     MaterialPageRoute(builder: (context) => const screen1(),
                     ),
                 );
-              }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
+              }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.red,)),
               logo,
               const SizedBox(height: 12.0),
               email,

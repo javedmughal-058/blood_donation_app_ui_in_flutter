@@ -8,7 +8,7 @@ void main() {
     const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.red,
         body: SplashScreen(),
       ),
     ),

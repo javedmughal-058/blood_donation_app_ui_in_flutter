@@ -136,7 +136,7 @@ class MyHomePage extends StatelessWidget {
 
           ),
           Expanded(
-            flex: 4,
+            flex: 9,
             child: Container(
               // width: double.infinity,
                 decoration: const BoxDecoration(

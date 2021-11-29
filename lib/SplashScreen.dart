@@ -46,6 +46,7 @@ class SplashScreenState extends State<SplashScreen> {
               fontSize: 26,
               fontWeight: FontWeight.bold,
               color: Colors.white,
+              fontFamily: 'Shrikhand',
             ),)
           ]
       ),

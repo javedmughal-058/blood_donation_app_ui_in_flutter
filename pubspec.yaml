@@ -82,6 +82,10 @@ flutter:
       fonts:
         - asset: Fonts/Satisfy-Regular.ttf
           style: italic
+    - family: Shrikhand
+      fonts:
+        - asset: Fonts/Shrikhand-Regular.ttf
+         # style: italic
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

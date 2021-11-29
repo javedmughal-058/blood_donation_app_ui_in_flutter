@@ -151,11 +151,11 @@ class donorsList extends StatelessWidget {
                                     MaterialPageRoute(builder: (context) => const Donor_profile()),
                                   );
                                 },
-                                    child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                    child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                               ),
-                              SizedBox(width: 15),
+                              const SizedBox(width: 15),
                               Column(
-                                children: [
+                                children: const [
                                   SizedBox(height: 20,),
                                   Text('Name of Donor',style: TextStyle(
                                     color: Colors.white,
@@ -169,7 +169,7 @@ class donorsList extends StatelessWidget {
                                   ),),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               MaterialButton(onPressed: (){},
                                 child: Row(
                                   children: [
@@ -178,14 +178,14 @@ class donorsList extends StatelessWidget {
                                         context,
                                         MaterialPageRoute(builder: (context) => const ChatScreen()),
                                       );
-                                    }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                    SizedBox(width: 15,),
+                                    }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                    const SizedBox(width: 15,),
                                     IconButton(onPressed: (){
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(builder: (context) => const ChatScreen()),
                                       );
-                                    }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                    }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                   ],
                                 ),
                               ),
@@ -211,11 +211,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -229,7 +229,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -238,14 +238,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -271,11 +271,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -289,7 +289,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -298,14 +298,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -331,11 +331,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -349,7 +349,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -358,14 +358,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -391,11 +391,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -409,7 +409,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -418,14 +418,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -451,11 +451,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -469,7 +469,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -478,14 +478,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -511,11 +511,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -529,7 +529,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -538,14 +538,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -571,11 +571,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -589,7 +589,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -598,14 +598,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -631,11 +631,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -649,7 +649,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -658,14 +658,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -691,11 +691,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -709,7 +709,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -718,14 +718,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -751,11 +751,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -769,7 +769,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -778,14 +778,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -811,11 +811,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -829,7 +829,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -838,14 +838,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -871,11 +871,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -889,7 +889,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -898,14 +898,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -931,11 +931,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -949,7 +949,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -958,14 +958,73 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                            ),
+                            const SizedBox(width: 15),
+                            Column(
+                              children: const [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            const Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -991,11 +1050,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -1009,7 +1068,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -1018,14 +1077,14 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
@@ -1051,11 +1110,11 @@ class donorsList extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => const Donor_profile()),
                                 );
                               },
-                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                                child: const Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             Column(
-                              children: [
+                              children: const [
                                 SizedBox(height: 20,),
                                 Text('Name of Donor',style: TextStyle(
                                   color: Colors.white,
@@ -1069,7 +1128,7 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             MaterialButton(onPressed: (){},
                               child: Row(
                                 children: [
@@ -1078,80 +1137,21 @@ class donorsList extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
+                                  }, icon:const Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  const SizedBox(width: 15,),
                                   IconButton(onPressed: (){
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(builder: (context) => const ChatScreen()),
                                     );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  }, icon:const Icon(Icons.message),hoverColor: Colors.white, ),
                                 ],
                               ),
                             ),
                           ]
                       ),
                     ),
-                    const SizedBox(height: 10,),
-                    Container(
-                      height: 70,
-                      decoration: BoxDecoration (
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(10),
 
-                      ),
-                      child: Row(
-                          children: [
-                            const SizedBox(width: 20,),
-                            CircleAvatar(
-                              child:MaterialButton(onPressed: (
-                                  ){
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
-                                );
-                              },
-                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
-                            ),
-                            SizedBox(width: 15),
-                            Column(
-                              children: [
-                                SizedBox(height: 20,),
-                                Text('Name of Donor',style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                  fontFamily: 'Shrikhand',
-                                ),),
-                                Text('+923001234567',style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 12,
-                                  fontFamily: 'Shrikhand',
-                                ),),
-                              ],
-                            ),
-                            Spacer(),
-                            MaterialButton(onPressed: (){},
-                              child: Row(
-                                children: [
-                                  IconButton(onPressed: (){
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
-                                    );
-                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
-                                  SizedBox(width: 15,),
-                                  IconButton(onPressed: (){
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
-                                    );
-                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
-                                ],
-                              ),
-                            ),
-                          ]
-                      ),
-                    ),
 
                              ]
                             ),

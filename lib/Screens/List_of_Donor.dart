@@ -125,21 +125,64 @@ class donorsList extends StatelessWidget {
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(50),topRight: Radius.circular(50), ),
                   color: Colors.white,
                 ),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(20),),
               child: ListView(
                   children: [
-                        Expanded(
+                        Container(
+                          height: 70,
+                          decoration: BoxDecoration (
+                          color: Colors.red,
+                            borderRadius: BorderRadius.circular(10),
+
+                          ),
                           child: Row(
                             children: [
-                                      
+                              SizedBox(width: 20,),
+                              CircleAvatar(child: Image.asset('images/b-d-logo.png',color: Colors.transparent,),),
+                              SizedBox(width: 15),
+                              Column(
+                                children: [
+                                  SizedBox(height: 20,),
+                                  Text('Name of Donor',style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontFamily: 'Shrikhand',
+                                  ),),
+                                  Text('+923001234567',style: TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 12,
+                                    fontFamily: 'Shrikhand',
+                                  ),),
+                                ],
+                              ),
+
+                              MaterialButton(onPressed: (){},child: Text('Button'),),
                                   ]
                                   ),
                                  ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),),
+                      child: Row(
+                          children: [
+                            CircleAvatar(child: Image.asset('images/b-d-logo.png'),),
+                            Text('data'),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
                              ]
                             ),
 
                         ),
-      ),
-      ]
+       ),
+          ),
+        ]
       ),
       ),
     );

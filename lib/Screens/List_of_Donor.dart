@@ -2,6 +2,8 @@ import 'package:blood_bank/Screens/selection_screen.dart';
 import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'chat_screen.dart';
+import 'donor_profile.dart';
 import 'login.dart';
 
 class donorsList extends StatelessWidget {
@@ -11,7 +13,7 @@ class donorsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
-      appBar: AppBar(title: Text('List of Donors'),backgroundColor: Colors.red,),
+      appBar: AppBar(title: const Text('List of Donors'),backgroundColor: Colors.red,),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -140,10 +142,16 @@ class donorsList extends StatelessWidget {
                           ),
                           child: Row(
                             children: [
-                              SizedBox(width: 20,),
+                              const SizedBox(width: 20,),
                               CircleAvatar(
-                                child:
-                                Image(image: AssetImage("images/man.png")),
+                                child:MaterialButton(onPressed: (
+                                    ){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                  );
+                                },
+                                    child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                               ),
                               SizedBox(width: 15),
                               Column(
@@ -161,7 +169,26 @@ class donorsList extends StatelessWidget {
                                   ),),
                                 ],
                               ),
-                              MaterialButton(onPressed: (){},child: Text('Button'),),
+                              Spacer(),
+                              MaterialButton(onPressed: (){},
+                                child: Row(
+                                  children: [
+                                    IconButton(onPressed: (){
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                      );
+                                    }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                    SizedBox(width: 15,),
+                                    IconButton(onPressed: (){
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                      );
+                                    }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                  ],
+                                ),
+                              ),
                                   ]
                                   ),
                                  ),
@@ -175,10 +202,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/man.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -196,7 +229,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -210,10 +262,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/woman.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -231,7 +289,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -245,10 +322,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/man.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -266,7 +349,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -280,10 +382,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/man.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -301,7 +409,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -315,10 +442,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/woman.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -336,7 +469,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -350,10 +502,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/man.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -371,7 +529,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -385,10 +562,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/woman.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -406,7 +589,26 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
@@ -420,10 +622,16 @@ class donorsList extends StatelessWidget {
                       ),
                       child: Row(
                           children: [
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             CircleAvatar(
-                              child:
-                              Image.asset('images/man.png',),
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
                             ),
                             SizedBox(width: 15),
                             Column(
@@ -441,11 +649,510 @@ class donorsList extends StatelessWidget {
                                 ),),
                               ],
                             ),
-                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
                           ]
                       ),
                     ),
                     const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/man.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            const SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:MaterialButton(onPressed: (
+                                  ){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const Donor_profile()),
+                                );
+                              },
+                                child: Image(image: AssetImage("images/woman.png"),height: 50,width: 50,),),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            Spacer(),
+                            MaterialButton(onPressed: (){},
+                              child: Row(
+                                children: [
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.call_rounded),hoverColor: Colors.green, ),
+                                  SizedBox(width: 15,),
+                                  IconButton(onPressed: (){
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ChatScreen()),
+                                    );
+                                  }, icon:Icon(Icons.message),hoverColor: Colors.white, ),
+                                ],
+                              ),
+                            ),
+                          ]
+                      ),
+                    ),
+
                              ]
                             ),
 

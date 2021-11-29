@@ -131,7 +131,7 @@ class donorsList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),),
               child: ListView(
                   children: [
-                        Container(
+                    Container(
                           height: 70,
                           decoration: BoxDecoration (
                           color: Colors.red,
@@ -141,41 +141,311 @@ class donorsList extends StatelessWidget {
                           child: Row(
                             children: [
                               SizedBox(width: 20,),
-                              CircleAvatar(child: Image.asset('images/b-d-logo.png',color: Colors.transparent,),),
+                              CircleAvatar(
+                                child:
+                                Image(image: AssetImage("images/man.png")),
+                              ),
                               SizedBox(width: 15),
                               Column(
                                 children: [
                                   SizedBox(height: 20,),
                                   Text('Name of Donor',style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     fontFamily: 'Shrikhand',
                                   ),),
                                   Text('+923001234567',style: TextStyle(
-                                    color: Colors.black54,
+                                    color: Colors.black,
                                     fontSize: 12,
                                     fontFamily: 'Shrikhand',
                                   ),),
                                 ],
                               ),
-
                               MaterialButton(onPressed: (){},child: Text('Button'),),
                                   ]
                                   ),
                                  ),
                     const SizedBox(height: 10,),
                     Container(
+                      height: 70,
                       decoration: BoxDecoration (
                         color: Colors.red,
-                        borderRadius: BorderRadius.circular(10),),
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
                       child: Row(
                           children: [
-                            CircleAvatar(child: Image.asset('images/b-d-logo.png'),),
-                            Text('data'),
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/man.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
                             MaterialButton(onPressed: (){},child: Text('Button'),),
                           ]
                       ),
                     ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/woman.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/man.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/man.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/woman.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/man.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/woman.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
+                    Container(
+                      height: 70,
+                      decoration: BoxDecoration (
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                      child: Row(
+                          children: [
+                            SizedBox(width: 20,),
+                            CircleAvatar(
+                              child:
+                              Image.asset('images/man.png',),
+                            ),
+                            SizedBox(width: 15),
+                            Column(
+                              children: [
+                                SizedBox(height: 20,),
+                                Text('Name of Donor',style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                                Text('+923001234567',style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Shrikhand',
+                                ),),
+                              ],
+                            ),
+                            MaterialButton(onPressed: (){},child: Text('Button'),),
+                          ]
+                      ),
+                    ),
+                    const SizedBox(height: 10,),
                              ]
                             ),
 

@@ -1,4 +1,3 @@
-import 'package:alert/alert.dart';
 import 'package:blood_bank/Screens/selection_screen.dart';
 import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
@@ -103,7 +102,7 @@ class _DonerPageState extends State<Doner> {
             context: context,
             type: CoolAlertType.success,
             text: 'Submission Completed successfully!',
-            autoCloseDuration: Duration(seconds: 3),
+            autoCloseDuration: const Duration(seconds: 3),
           );
 
         },

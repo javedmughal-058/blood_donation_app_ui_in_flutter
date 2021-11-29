@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
     final registerLabel=  InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SignUp()));
+            context, MaterialPageRoute(builder: (context) => const SignUp()));
       },
       child: Container(
         //margin: EdgeInsets.symmetric(vertical: 20),

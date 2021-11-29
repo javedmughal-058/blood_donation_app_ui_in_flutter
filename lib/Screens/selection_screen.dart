@@ -1,4 +1,5 @@
 import 'package:alert/alert.dart';
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'donor_screen.dart';
@@ -27,15 +28,15 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.redAccent,
-      appBar: AppBar(title: Text(title),backgroundColor: Colors.redAccent,),
+      backgroundColor: Colors.red,
+      appBar: AppBar(title: Text(title),backgroundColor: Colors.red,),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.redAccent,
+                color: Colors.red,
               ),
               child: CircleAvatar(
                   backgroundColor: Colors.white,
@@ -95,12 +96,10 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                const AlertDialog(title: Text('Pak Blood Donation\n V0.1.1'),
-                  titleTextStyle: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 12,
-                      fontFamily: 'Satisfy',
-                  ),
+                CoolAlert.show(
+                  context: context,
+                  type: CoolAlertType.info,
+                  text: 'Pak Blood Donation \n V0.1.1 \nCopyRight \'MultiLearner\'',
                 );
 
               },
@@ -113,7 +112,11 @@ class MyHomePage extends StatelessWidget {
                   fontSize: 16.0,
                 ),),
               onTap: () {
-               Alert(message: 'This is alert message');
+                CoolAlert.show(
+                  context: context,
+                  type: CoolAlertType.info,
+                  text: 'Pak Blood Donation \n V0.1.1 \nCopyRight \'MultiLearner\'',
+                );
               },
             ),
 
@@ -127,7 +130,7 @@ class MyHomePage extends StatelessWidget {
             child: Container(
               width: double.infinity,
               decoration: const BoxDecoration(
-                color: Colors.redAccent,
+                color: Colors.red,
               ),
             ),
 
@@ -194,13 +197,13 @@ class MyHomePage extends StatelessWidget {
                         Text('Donor',style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.redAccent,
+                          color: Colors.red,
                         ),),
                         SizedBox(width: 40,),
                         Text('Receiver',style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.redAccent,
+                          color: Colors.red,
                         ),),
                       ],
                     ),

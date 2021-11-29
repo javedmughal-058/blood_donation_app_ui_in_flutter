@@ -1,4 +1,6 @@
+import 'package:alert/alert.dart';
 import 'package:blood_bank/Screens/selection_screen.dart';
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 
 class Doner extends StatefulWidget {
@@ -97,10 +99,16 @@ class _DonerPageState extends State<Doner> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          const AlertDialog(title: Text("Thanks for joining"));
+          CoolAlert.show(
+            context: context,
+            type: CoolAlertType.success,
+            text: 'Submission Completed successfully!',
+            autoCloseDuration: Duration(seconds: 3),
+          );
+
         },
         padding: const EdgeInsets.all(12),
-        color: Colors.redAccent,
+        color: Colors.red,
         child: const Text('Submit', style: TextStyle(color: Colors.white,height: 2)),
       ),
     );
@@ -126,7 +134,7 @@ class _DonerPageState extends State<Doner> {
                   MaterialPageRoute(builder: (context) => const screen1(),
                   ),
                 );
-              }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.redAccent,)),
+              }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.red,)),
               logo,
               const SizedBox(height: 5.0),
               name,

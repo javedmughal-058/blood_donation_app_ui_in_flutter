@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Screens/List_of_Donor.dart';
 import 'main.dart';
 
 void main() {
@@ -59,6 +58,6 @@ class SplashScreenState extends State<SplashScreen> {
 
   onDoneLoading() async {
     Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const donorsList()));
+        MaterialPageRoute(builder: (context) => const MyApp()));
   }
 }

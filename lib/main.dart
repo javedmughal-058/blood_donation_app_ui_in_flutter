@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'Screens/selection_screen.dart';
-
+void main() {
+  return runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.red,
+        body: MyHomePage(title: 'Pak Blood Donation',),
+      ),
+    ),
+  );
+}
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 

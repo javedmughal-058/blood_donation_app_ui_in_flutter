@@ -109,13 +109,15 @@ class receiver_screen extends StatelessWidget {
         body: SafeArea(child:
         Container(
 
-            padding: const EdgeInsets.all(30.0),
+            padding: const EdgeInsets.all(15.0),
             decoration: const BoxDecoration(
               color: Colors.redAccent,
               //borderRadius: BorderRadius.all(Radius.circular(50)),
             ),
             child: Container(
+              padding: const EdgeInsets.all(15.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   IconButton(onPressed: (){
                     Navigator.push(
@@ -138,9 +140,12 @@ class receiver_screen extends StatelessWidget {
                   Expanded(
                     flex: 9,
                     child: Container(
-                      padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(color: Colors.grey[200],
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: Colors.black26,
+                        ),
                       ),
                       child: ListView(
                         children: [
@@ -318,8 +323,6 @@ class receiver_screen extends StatelessWidget {
                     ),)
                 ],
               ),
-
-              padding: const EdgeInsets.all(50.0),
               decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
             ),
         ),

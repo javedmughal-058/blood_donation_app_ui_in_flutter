@@ -160,7 +160,7 @@ class MyHomePage extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => const Doner()),
+                                  MaterialPageRoute(builder: (context) =>  Doner()),
                                 );
                               },
                               child:  SizedBox(width: 80, height: 80,

@@ -4,13 +4,46 @@ import 'package:flutter/material.dart';
 
 class Doner extends StatefulWidget {
   static String tag = 'Doner-page';
-  const Doner({Key? key}) : super(key: key);
+  static String holder='';
+   Doner({Key? key}) : super(key: key);
   @override
   _DonerPageState createState() =>  _DonerPageState();
 }
 
 class _DonerPageState extends State<Doner> {
   String blood = 'A+';
+  var bloodgroup = Doner.holder;
+  void convertion(String bloodgroup) {
+
+    if (bloodgroup == 'A+') {
+      blood = 'A+';
+    }
+    if (bloodgroup == 'A-') {
+      blood = 'A-';
+    }
+    if (bloodgroup == 'B+') {
+      blood = 'B+';
+    }
+    if (bloodgroup == 'B-') {
+      blood = 'B-';
+    }
+    if (bloodgroup == 'AB+') {
+      blood = 'AB+';
+    } if (bloodgroup == 'AB-') {
+      blood = 'AB-';
+    }
+    if (bloodgroup == 'O+') {
+      blood = 'O+';
+    }
+    if (bloodgroup == 'O-') {
+      blood = 'O-';
+    }
+
+
+
+  }
+
+
   List<String> data = [
     'A+',
     'A-',
@@ -21,6 +54,9 @@ class _DonerPageState extends State<Doner> {
     'O+',
     'O-'
   ];
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -69,30 +105,20 @@ class _DonerPageState extends State<Doner> {
         ),
       ),
     );
-    final group= DropdownButton(
-      value: blood,
-      icon: const Icon(Icons.arrow_drop_down),
-      iconSize: 24,
-      elevation: 16,
-      style: const TextStyle(color: Colors.red, fontSize: 16),
-      underline: Container(
-        height: 1,
-        color: Colors.red,
+    final group = TextFormField(
+      keyboardType: TextInputType.emailAddress,
+      autofocus: false,
+      decoration: const InputDecoration(
+        hintText: 'blood group',
+        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.red),
+        ),
       ),
-      onChanged: (String? newValue) {
-        setState(() {
-          data = newValue! as List<String>;
-        });
-      },
-      items: data.map<DropdownMenuItem<String>>((String value) {
-        return DropdownMenuItem<String>(
-          value: value,
-          child: Text(value),
-        );
-      }).toList(),
+
     );
     final SigupButton = Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
@@ -114,38 +140,39 @@ class _DonerPageState extends State<Doner> {
     return Scaffold(
       backgroundColor: Colors.red,
       body: Container(
-        padding: const EdgeInsets.all(50.0),
+        padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
         decoration: const BoxDecoration(
           color: Colors.red,
           //borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
-        child: Container(
-
-          padding: const EdgeInsets.all(50.0),
-          decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
-          child: ListView(
-            shrinkWrap: true,
-            //padding: EdgeInsets.only(left: 24.0, right: 24.0),
-            children: <Widget>[
-              IconButton(onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const screen1(),
-                  ),
-                );
-              }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.red,)),
-              logo,
-              const SizedBox(height: 5.0),
-              name,
-              const SizedBox(height: 5.0),
-              address,
-              const SizedBox(height: 5.0),
-              contact,
-              const SizedBox(height: 5.0),
-              group,
-              const SizedBox(height: 5.0),
-              SigupButton,
-            ],
+        child: Center(
+          child: Container(
+            padding: const EdgeInsets.all(15.0),
+            decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50),), color: Colors.white,),
+            child: ListView(
+              shrinkWrap: true,
+              //padding: EdgeInsets.only(left: 24.0, right: 24.0),
+              children: <Widget>[
+                IconButton(onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const screen1(),
+                    ),
+                  );
+                }, icon: const Icon(Icons.arrow_back_rounded,color: Colors.red,)),
+                logo,
+                const SizedBox(height: 5.0),
+                name,
+                const SizedBox(height: 5.0),
+                address,
+                const SizedBox(height: 5.0),
+                contact,
+                const SizedBox(height: 5.0),
+                group,
+                const SizedBox(height: 5.0),
+                SigupButton,
+              ],
+            ),
           ),
         ),
       ),
